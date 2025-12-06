@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <canvas id="confetti"></canvas>
+
+    <div class="container">
+        <div class="intro">
+            <h1 class="glow">Happy Birthday!</h1>
+            <p>Hôm nay là một ngày đặc biệt...</p>
+            <p>Hãy thổi nến để nhận điều bất ngờ nhé!</p>
+        </div>
+
+        <div class="cake-container" id="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="cherry"></div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+
+        <div class="message" id="message-box">
+            <h2>Chúc mừng sinh nhật Dì thân mến! 🎂</h2>
+            <p>
+                Tuổi mới chúc Dì luôn vui vẻ như chim sẻ,
+                khoẻ mạnh như đại bàng,
+                giàu sang như chim phụng,
+                làm lụng như chim sâu,
+                sống lâu như đà điểu!
+            </p>
+            <p class="signature">- Từ đứa cháu nhỏ với tấm lòng to bự -</p>
+            <button onclick="restart()">🎉 Chúc mừng lần nữa 🎉</button>
+        </div>
+    </div>
+
+    <audio id="audio" loop>
+        <source src="happy-birthday-celebration-happy-birthday-to-you-363137.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
